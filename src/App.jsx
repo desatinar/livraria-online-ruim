@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home.jsx';
+import Product from './pages/Product.jsx';
 
-const Product = () => <h1>Product Page</h1>;
 const Cart = () => <h1>Cart</h1>;
 const Checkout = () => <h1>Checkout</h1>;
 
