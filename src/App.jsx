@@ -4,8 +4,7 @@ import './App.css';
 import Home from './pages/Home.jsx';
 import Product from './pages/Product.jsx';
 import Checkout from './pages/Checkout.jsx';
-
-const Cart = () => <h1>Cart</h1>;
+import Cart from './pages/Cart.jsx';
 
 
 function App() {
