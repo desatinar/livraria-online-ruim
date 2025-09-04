@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home.jsx';
 
-const Home = () => <h1>Home Page - Encontre livros... se puder!</h1>;
 const Product = () => <h1>Product Page</h1>;
 const Cart = () => <h1>Cart</h1>;
 const Checkout = () => <h1>Checkout</h1>;
