@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home.jsx';
@@ -9,6 +9,11 @@ const Cart = () => <h1>Cart</h1>;
 
 
 function App() {
+  const [showPopup, setShowPopup] = useState(true);
+  useEffect(() => {
+    setInterval(() => setShowPopup(true), 5000);
+  }, []);
+
   return (
     <Router>
       <div>
@@ -27,6 +32,12 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<h1>Erro - Página perdida. Boa sorte!</h1>} />
         </Routes>
+        {showPopup && (
+          <div style={{ position: 'fixed', top: '10%', left: '10%', background: 'red', padding: '10px' }}>
+            <h2>Pop-up Irritante!</h2>
+            <button style={{ fontSize: '6px' }} onClick={() => setShowPopup(false)}>fechar</button> {/* Minúsculo */}
+          </div>
+        )}
       </div>
     </Router>
   );
