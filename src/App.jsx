@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import './App.css';
 
 const Home = () => <h1>Home Page - Encontre livros... se puder!</h1>;
 const Product = () => <h1>Product Page</h1>;
@@ -10,12 +11,11 @@ function App() {
   return (
     <Router>
       <div>
-        {/* Navegação inconsistente */}
         <nav>
           <Link to="/">Home</Link> |
           <Link to="/product">Produto</Link> |
           <Link to="/product">Produto (redundante)</Link> |
-          <Link to="/cart">Cart</Link> |
+          <Link to="/cart">Carrinho</Link> |
           <Link to="/nao-existe">Link Quebrado</Link> |
           <Link to="/checkout">Checkout</Link>
         </nav>
