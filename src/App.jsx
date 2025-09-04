@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home.jsx';
 import Product from './pages/Product.jsx';
+import Checkout from './pages/Checkout.jsx';
 
 const Cart = () => <h1>Cart</h1>;
-const Checkout = () => <h1>Checkout</h1>;
+
 
 function App() {
   return (
